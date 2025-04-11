@@ -82,6 +82,6 @@ En d’autres termes : **en maîtrisant la dépendance**, on rend le test bien p
 <br> ⚙️ Les tests deviennent plus simples, plus fiables, et plus proches de la réalité.
 
 📚 Pour voir des exemples concrets :
- - Slides : https://adapter-contract-testing.github.io/presentation
- - Kata : https://github.com/adapter-contract-testing/snail-race-kata
+ - [Slides](https://adapter-contract-testing.github.io/presentation)
+ - [Kata](https://github.com/adapter-contract-testing/snail-race-kata)
 
