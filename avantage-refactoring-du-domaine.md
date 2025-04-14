@@ -11,7 +11,7 @@ l’application à travers ses interfaces naturelles. Dans une architecture hexa
 cela veut dire : tester à travers les ports d’entrée, tout en simulant 🎭 parfaitement les ports de sortie.
 
 Et qu’est-ce qui nous permet d’avoir ces simulateurs "parfaits" ? C’est là qu’intervient 
-<a href="./README">l’adapter contract testing</a> : en définissant clairement les contrats entre l’hexagone et ses adaptateurs, 
+<a href="./">l’adapter contract testing</a> : en définissant clairement les contrats entre l’hexagone et ses adaptateurs, 
 on peut simuler leur comportement avec précision, sans dériver du réel. On garde ainsi des tests fiables, 
 robustes, et représentatifs de ce qui se passe en production.
 
