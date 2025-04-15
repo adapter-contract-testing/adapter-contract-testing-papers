@@ -20,3 +20,7 @@ robustes, et représentatifs de ce qui se passe en production.
 respectées et que les ports restent cohérents, les tests restent verts. Et surtout : utiles.
 Ce genre de tests donne confiance. Ils encouragent les refactorings profonds. Et ils nous rappellent 
 que les tests sont là pour sécuriser 🛟 le code… pas pour l’enfermer 🔒.
+
+####  Voir aussi :
+- [Adapter Contract Testing](README.md)
+- [Migration des dépendances](avantage-migration-des-partenaires.md)
