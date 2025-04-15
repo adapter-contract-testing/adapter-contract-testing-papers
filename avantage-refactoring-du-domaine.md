@@ -7,7 +7,7 @@ que le comportement métier reste inchangé — pas de valider une implémentati
 
 Une piste solide pour sortir de ce piège : écrire des tests gros grain, qui valident 
 l’application à travers ses interfaces naturelles. Dans une architecture hexagonale, 
-cela veut dire : tester à travers les interfaces métier du domaine (ports d’entrée), tout en simulant 🎭 parfaitement les dépendances externes (les ports de sortie).
+cela veut dire : tester à travers les interfaces métier du domaine (ports d’entrée), tout en **simulant 🎭 parfaitement** les dépendances externes (les ports de sortie).
 
 <img src="./architecture-test-domaine.png" alt="The test interacts through the public ports of the application, and with the simulators whenever there's no suitable public port">
 
