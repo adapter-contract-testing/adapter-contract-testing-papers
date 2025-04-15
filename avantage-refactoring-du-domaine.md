@@ -9,7 +9,7 @@ Une piste solide pour sortir de ce piège : écrire des tests gros grain, qui va
 l’application à travers ses interfaces naturelles. Dans une architecture hexagonale, 
 cela veut dire : tester à travers les interfaces métier du domaine (ports d’entrée), tout en simulant 🎭 parfaitement les dépendances externes (les ports de sortie).
 
-<img width="418" src="./architecture-test-domaine.png" alt="The test interacts through the public ports of the application, and with the simulators whenever there's no suitable public port">
+<img src="./architecture-test-domaine.png" alt="The test interacts through the public ports of the application, and with the simulators whenever there's no suitable public port">
 
 Et qu’est-ce qui nous permet d’avoir ces simulateurs "parfaits" ? C’est là qu’intervient 
 <a href="./">l’adapter contract testing</a> : en définissant clairement les contrats entre l’hexagone et ses adaptateurs, 
