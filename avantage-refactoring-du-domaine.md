@@ -2,13 +2,14 @@
 Rien de plus frustrant qu’un refactoring bien intentionné… qui casse une dizaine de tests unitaires 🤯.
 On voulait juste simplifier une classe, mais on se retrouve à devoir ajuster des mocks, 
 des assertions ou des doubles de test qui n’ont plus de sens. C’est épuisant, et pire : 
-ça donne l’impression que les tests sont un frein au changement 🛑.
-
-Mais les tests ne devraient jamais freiner un refactoring. Leur rôle, c’est de garantir 
+ça donne l’impression que les tests sont un frein au changement 🛑. Mais les tests ne devraient jamais freiner un refactoring. Leur rôle, c’est de garantir 
 que le comportement métier reste inchangé — pas de valider une implémentation.
+
 Une piste solide pour sortir de ce piège : écrire des tests gros grain, qui valident 
 l’application à travers ses interfaces naturelles. Dans une architecture hexagonale, 
-cela veut dire : tester à travers les ports d’entrée, tout en simulant 🎭 parfaitement les ports de sortie.
+cela veut dire : tester à travers les interfaces métier du domaine (ports d’entrée), tout en simulant 🎭 parfaitement les dépendances externes (les ports de sortie).
+
+<img width="418" src="./architecture-test-domaine.png" alt="The test interacts through the public ports of the application, and with the simulators whenever there's no suitable public port">
 
 Et qu’est-ce qui nous permet d’avoir ces simulateurs "parfaits" ? C’est là qu’intervient 
 <a href="./">l’adapter contract testing</a> : en définissant clairement les contrats entre l’hexagone et ses adaptateurs, 
