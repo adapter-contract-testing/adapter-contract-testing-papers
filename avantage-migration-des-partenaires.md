@@ -25,3 +25,7 @@ Cette approche permet de transférer les données petit à petit et de basculer 
 
 Cette méthode offre une transition maîtrisée, en minimisant les risques et en renforçant la confiance dans les 
 changements de partenaires.
+
+####  Voir aussi :
+- [Adapter Contract Testing](README.md)
+- [Refactoring du domaine](avantage-refactoring-du-domaine.md)
