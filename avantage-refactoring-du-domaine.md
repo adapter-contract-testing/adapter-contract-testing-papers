@@ -24,3 +24,4 @@ que les tests sont là pour sécuriser 🛟 le code… pas pour l’enfermer �
 ####  Voir aussi :
 - [Adapter Contract Testing](README.md)
 - [Migration des dépendances](avantage-migration-des-partenaires.md)
+- [Intégration sans surprise](avantage-integration-services-tiers-sans-surprises.md)

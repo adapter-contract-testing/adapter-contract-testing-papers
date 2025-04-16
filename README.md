@@ -88,9 +88,8 @@ En d’autres termes : **en maîtrisant la dépendance**, on rend le test bien p
 ## Voir aussi
 ### Les 5 bénéfices
  - ✅ [Plus de refactorabilité](./avantage-refactoring-du-domaine.md) (du métier et des adapteurs)
- - ☑️ Une intégration avec des systèmes externes avec bcp moins de surprises
+ - ✅ [Intégration sans surprise](avantage-integration-services-tiers-sans-surprises.md)
  - ☑️ Plus de confiance dans nos tests à tous les niveaux (bcp moins de tests vert avec bug en prod)
  - ✅ [Migration facile de dépendances](./avantage-migration-des-partenaires.md)
  - ☑️ Isolation de complexité externe
-
 

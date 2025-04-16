@@ -29,3 +29,4 @@ changements de partenaires.
 ####  Voir aussi :
 - [Adapter Contract Testing](README.md)
 - [Refactoring du domaine](avantage-refactoring-du-domaine.md)
+- [Intégration sans surprise](avantage-integration-services-tiers-sans-surprises.md)
