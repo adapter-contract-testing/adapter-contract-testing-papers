@@ -8,8 +8,9 @@ Des exemples ? En voilà :
 Alors on fait quoi ? On pleure ? On prie ? Non. On valide fort, on parse pour construire des objets métier et on teste large.
 
 💡 La combo gagnante :
-✔️ Des normalisations et des validations strictes à l’entrée, parce que si c’est (trop) pourri, c’est non.
-✔️ Des tests sur des montagnes de données, pour découvrir tous les cas, disons divergents, avant que la prod ne les découvre pour vous.
+<br> ✔️ Des normalisations et des validations strictes à l’entrée, parce que si c’est (trop) pourri, c’est non.
+<br> ✔️ Des tests sur des montagnes de données, rendu possible grˆ, pour découvrir tous les cas, disons divergents, avant que la prod ne les découvre pour vous.
+
 ![Cleaning the data with an anti-corruption layer](dirty-dto-to-clean-domain-object.png)
 
 Et pour aller encore plus loin, découvrez l’adapter contract testing, une technique que Mathieu Cans et moi partageons avec vous cette année à Devoxx et à AlpesCraft. Une façon élégante de dire à vos web-services : "Tu veux bien parler avec moi ? Très bien, mais voici le contrat. Et je le vérifie."
