@@ -9,7 +9,7 @@ Alors on fait quoi ? On pleure ? On prie ? Non. On valide fort, on parse pour co
 
 💡 La combo gagnante :
 <br> ✔️ Des normalisations et des validations strictes à l’entrée, parce que si c’est (trop) pourri, c’est non.
-<br> ✔️ Des tests sur des montagnes de données, rendu possible grˆ, pour découvrir tous les cas, disons divergents, avant que la prod ne les découvre pour vous.
+<br> ✔️ Des tests sur des montagnes de données, rendu possible grâce à l'Adapter Contract Testing, pour découvrir tous les cas, disons divergents, avant que la prod ne les découvre pour vous.
 
 ![Cleaning the data with an anti-corruption layer](dirty-dto-to-clean-domain-object.png)
 
