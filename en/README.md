@@ -8,12 +8,12 @@
 ### 🐛 A bug in production despite your tests?  
 
 You've tested everything... but an unexpected behavior occurs in production. 
-The cause? Often, **a mock** that does not faithfully simulate the service or database.<br>  
+The cause? Often, **a mock** that does not faithfully simulate the service or database.<br>
 What if you changed your approach?  
 
 ### 🎭 Simulators instead of mocks  
 
-Rather than blindly mocking with a framework, we can **manually code a simulator**.<br>  
+Rather than blindly mocking with a framework, we can **manually code a simulator**.<br>
 A simple component, maintained within the project, that simulates **just what the application needs**.  
 
 **💡 Why is it better?**  
@@ -33,7 +33,7 @@ A well-designed simulator becomes a valuable tool in all application tests. And 
 
 ### 🔁 Adapter Contract Testing: the link between the real and the simulated  
 
-But how do we ensure that this simulator behaves **like the real service**?<br>  
+But how do we ensure that this simulator behaves **like the real service**?<br>
 ➡️ This is where **Adapter Contract Testing** comes in.  
 
 The idea:  
@@ -66,7 +66,7 @@ But to make this approach successful, the interface between the application and 
  - develop a faithful simulator,
  - and maintain the whole over time.  
  
-📐 **Domain Driven Design** and **hexagonal architecture** are two excellent sources of inspiration here:<br>  
+📐 **Domain Driven Design** and **hexagonal architecture** are two excellent sources of inspiration here:<br>
   They encourage designing business interfaces **centered on the actual use** of the dependency, not on its internal complexity.  
   
 In other words: **by mastering the dependency**, we make testing much simpler and more robust.
