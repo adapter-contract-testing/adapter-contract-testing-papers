@@ -29,4 +29,4 @@ This method offers a controlled transition, minimizing risks and strengthening c
 #### See also:
 - [Adapter Contract Testing](README.md)
 - [Domain Refactoring](benefit-domain-refactorability.md)
-- [Integration Without Surprises](avantage-integration-services-tiers-sans-surprises.md)
+- [Integration Without Surprises](benefit-third-party-service-integration-without-surprises.md)

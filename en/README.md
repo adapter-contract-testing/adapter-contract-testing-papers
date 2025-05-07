@@ -88,8 +88,8 @@ In other words: **by mastering the dependency**, we make testing much simpler an
 ## See also  
 ### The 5 benefits
 
-✅ [More refactorability](./benefit-domain-refactorability.md) (of business and adapters)<br>
-✅ Integration without surprises  <br>
+✅ [More refactorability](benefit-domain-refactorability.md) (of business and adapters)<br>
+✅ [Integration without surprises](benefit-third-party-service-integration-without-surprises.md)  <br>
 ☑️ More confidence in our tests at all levels (much fewer green tests with bugs in production)<br> 
-✅ [Easy migration of dependencies](./benefit-dependency-migration.md)  <br>
+✅ [Easy migration of dependencies](benefit-dependency-migration.md)  <br>
 ☑️ Isolation of external complexity<br>

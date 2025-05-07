@@ -23,5 +23,5 @@ to secure 🛟 the code... not to lock it down 🔒.
 
 #### See also:
 - [Adapter Contract Testing](README.md)
-- [Dependency Migration](./benefit-dependency-migration.md)
-- [Integration Without Surprises](avantage-integration-services-tiers-sans-surprises.md)
+- [Dependency Migration](benefit-dependency-migration.md)
+- [Integration Without Surprises](benefit-third-party-service-integration-without-surprises.md)
