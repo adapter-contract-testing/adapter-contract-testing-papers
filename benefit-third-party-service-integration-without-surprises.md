@@ -13,7 +13,7 @@ So what do we do? Cry? Pray? No. We validate strongly, we parse to build domain 
 <br> ✔️ Strict normalization and validation at the input, because if it’s (too) messy, it’s a no-go.
 <br> ✔️ Tests on mountains of real data, to discover all the, let’s say, divergent cases before production finds them for you.
 
-![Cleaning the data with an anti-corruption layer](../dirty-dto-to-clean-domain-object.png)
+![Cleaning the data with an anti-corruption layer](dirty-dto-to-clean-domain-object.png)
 
 And to go even further, discover adapter contract testing, a technique that Mathieu Cans and I are sharing with you this year at Devoxx and AlpesCraft. An elegant way to tell your web services: "You want to talk to me? Fine, but here’s the contract. And I’ll verify it."
 

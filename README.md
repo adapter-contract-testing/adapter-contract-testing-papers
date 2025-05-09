@@ -1,95 +1,95 @@
-🧪 Adapter Contract Testing & Simulateurs
+🧪 Adapter Contract Testing & Simulators
 ====
 
-➡️ Pour des tests applicatifs plus fiables, plus simples, sans mocks fragiles.
+➡️ For more reliable, simpler application testing, without fragile mocks.
 
 ----
 
-### 🐛 Un bug en prod malgré vos tests ?
+### 🐛 A bug in production despite your tests?  
 
-Vous avez tout testé… mais un comportement inattendu se produit en production.
-La cause ? Souvent, **un mock** qui ne simule pas fidèlement le service ou la base de données.<br>
-Et si vous changiez d’approche ?
+You've tested everything... but an unexpected behavior occurs in production. 
+The cause? Often, **a mock** that does not faithfully simulate the service or database.<br>
+What if you changed your approach?  
 
-### 🎭 Simulateurs à la place des mocks
+### 🎭 Simulators instead of mocks  
 
-Plutôt que de mocker à l’aveugle avec un framework, on peut **coder à la main un simulateur**. <br>
-Un composant simple, maintenu dans le projet, qui simule **juste ce dont l'application a besoin**.
+Rather than blindly mocking with a framework, we can **manually code a simulator**.<br>
+A simple component, maintained within the project, that simulates **just what the application needs**.  
 
-**💡 Pourquoi c’est mieux ?**
+**💡 Why is it better?**  
 
- - Le simulateur se comporte comme un vrai service, avec de vraies règles métier.
- - Il est plus expressif qu’un mock : on peut simuler des erreurs spécifiques, des séquences d’échanges, des états internes.
- - Il rend les tests métier **plus faciles à écrire** et **beaucoup plus fiables**, car l’environnement de test est proche du réel.
+ - The simulator behaves like a real service, with real business rules.  
+ - It is more expressive than a mock: we can simulate specific errors, exchange sequences, and internal states.  
+ - It makes business tests easier to write and much more reliable, as the testing environment is close to reality.  
 
-**🛠️ Exemples :**
+**🛠️ Examples:**
 
- - Pour un service tiers : le simulateur peut générer des réponses réalistes, des erreurs précises, ou simuler une séquence de requêtes typique de la prod.
- - Pour une base de données : on implémente une version in-memory, capable de gérer les insertions, les requêtes, et les règles de filtrage.
+ - For a third-party service: the simulator can generate realistic responses, precise errors, or simulate a typical production request sequence.  
+ - For a database: we implement an in-memory version, capable of handling insertions, queries, and filtering rules.  
 
-Un simulateur bien conçu devient un outil précieux dans tous les tests applicatifs. Et surtout : **il remplace tous les mocks** pour cette dépendance.
-
----
-
-### 🔁 Adapter Contract Testing : le lien entre le vrai et le simulé
-
-Mais comment garantir que ce simulateur se comporte **comme le vrai service** ?<br>
-➡️ C’est là qu’intervient l’**Adapter Contract Testing**.
-
-L’idée :
- 1. On écrit un test d’intégration **contre le vrai service externe** (ou une base réelle, ou toute dépendance non maîtrisée).
- 2. Ce test devient le **contrat de comportement** attendu.
- 3. On utilise ce même test pour valider notre simulateur.
-
-🎯 Résultat : **un seul test** garantit à la fois :
-
- - L’intégration avec le service externe fonctionne, sans surprise
- - Le simulateur reproduit fidèlement ce comportement.
- - La cohérence dans le temps entre la réalité et la simulation
-
-C’est puissant, car on évite la dérive entre ce qu’on teste et ce qui se passe en prod. On détecte aussi les régressions dues aux évolutions du partenaire
+A well-designed simulator becomes a valuable tool in all application tests. And above all: **it replaces all mocks** for that dependency.
 
 --- 
 
-### 🧩 Simplifier l’interface = simplifier le test
+### 🔁 Adapter Contract Testing: the link between the real and the simulated  
 
-Mais pour que cette approche fonctionne bien, encore faut-il que l’interface entre l’application et sa dépendance 
-soit **claire et stable**.
+But how do we ensure that this simulator behaves **like the real service**?<br>
+➡️ This is where **Adapter Contract Testing** comes in.  
+
+The idea:  
+1. We write an integration test **against the real external service** (or a real database, or any uncontrolled dependency).  
+2. This test becomes the expected **behavior contract**.  
+3. We use the same test to validate our simulator.  
+
+🎯 Result: a single test guarantees both:  
+
+ - Integration with the external service works, without surprises  
+ - The simulator faithfully reproduces this behavior.  
+ - Consistency over time between reality and simulation
+
+This is powerful, as it avoids drift between what we test and what happens in production. It also detects regressions due to partner changes.
 
 
-| Ce n'est pas parce que la dépendance fait tout cela             | Que l'on veut plus que ceci                                   |
+
+### 🧩 Simplifying the interface = simplifying the test  
+
+But to make this approach successful, the interface between the application and its dependency must be **clear and stable**.  
+
+
+| It's not because the dependency does all this                   | that we want more than this.                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
 | <img src="swiss-knife-complex.png" alt="complex" height="220"/> | <img src="swiss-knife-simple.png" alt="simple" height="220"/> |
 
-👉 Moins on expose les détails techniques de la dépendance, plus il est facile de : 
- - écrire un contrat simple,
- - développer un simulateur fidèle,
- - et maintenir l’ensemble dans le temps.
 
-📐 **Domain Driven Design** et **architecture hexagonale** sont deux excellentes sources d’inspiration ici : <br>
-Ils poussent à concevoir des interfaces métier **centrées sur l’usage réel** de la dépendance, et non sur sa complexité interne.
-
-En d’autres termes : **en maîtrisant la dépendance**, on rend le test bien plus simple et robuste.
+👉 The less we expose the technical details of the dependency, the easier it is to:
+ - write a simple contract,
+ - develop a faithful simulator,
+ - and maintain the whole over time.  
+ 
+📐 **Domain Driven Design** and **hexagonal architecture** are two excellent sources of inspiration here:<br>
+  They encourage designing business interfaces **centered on the actual use** of the dependency, not on its internal complexity.  
+  
+In other words: **by mastering the dependency**, we make testing much simpler and more robust.
 
 ---
 
-### ✅ En résumé
+###  ✅ In summary
 
-<br> 🧩 On simplifie l’interface vers nos dépendances.
-<br> 🧪 On écrit un test d’intégration qui définit un contrat de comportement.
-<br> 🎭 On développe un simulateur qui respecte ce contrat.
-<br> 🔁 Ce simulateur remplace tous les mocks dans nos tests applicatifs.
-<br> ⚙️ Les tests deviennent plus simples, plus fiables, et plus proches de la réalité.
+<br> 🧩 We simplify the interface to our dependencies.  
+<br> 🧪 We write an integration test that defines a behavior contract.  
+<br> 🎭 We develop a simulator that adheres to this contract.  
+<br> 🔁 This simulator replaces all mocks in our application tests.  
+<br> ⚙️ Tests become simpler, more reliable, and closer to reality.
 
-📚 Pour voir des exemples concrets :
+📚 For concrete examples:  
  - [Slides](https://adapter-contract-testing.github.io/presentation)
  - [Kata](https://github.com/adapter-contract-testing/snail-race-kata)
 
-## Voir aussi
-### Les 5 bénéfices
- ✅ [Plus de refactorabilité](./avantage-refactoring-du-domaine.md) (du métier et des adapteurs)<br>
- ✅ [Intégration sans surprise](avantage-integration-services-tiers-sans-surprises.md)<br>
- ☑️ Plus de confiance dans nos tests à tous les niveaux (bcp moins de tests vert avec bug en prod)<br>
- ✅ [Migration facile de dépendances](./avantage-migration-des-partenaires.md)<br>
- ☑️ Isolation de complexité externe<br>
+## See also  
+### The 5 benefits
 
+✅ [More refactorability](benefit-domain-refactorability.md) (of business and adapters)<br>
+✅ [Integration without surprises](benefit-third-party-service-integration-without-surprises.md)  <br>
+☑️ More confidence in our tests at all levels (much fewer green tests with bugs in production)<br> 
+✅ [Easy migration of dependencies](benefit-dependency-migration.md)  <br>
+☑️ Isolation of external complexity<br>

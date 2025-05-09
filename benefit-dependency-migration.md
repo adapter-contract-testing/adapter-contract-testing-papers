@@ -22,7 +22,7 @@ Based on hexagonal architecture, this method offers significant advantages:
 To migrate a database progressively, it becomes possible to write an adapter that writes to both databases while reading
 from only one. This approach allows data to be transferred gradually and switched over once the migration is complete.
 
-![Database migration illustration](../migration-db-illustration.png)
+![Database migration illustration](migration-db-illustration.png)
 
 This method offers a controlled transition, minimizing risks and strengthening confidence in partner changes.
 

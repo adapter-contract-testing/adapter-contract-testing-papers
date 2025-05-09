@@ -9,7 +9,7 @@ A solid way out of this trap: write coarse-grained tests that validate the appli
 In a hexagonal architecture, this means: 
 testing through the domain's business interfaces (entry ports) while **perfectly simulating 🎭** external dependencies (output ports).
 
-<img src="../architecture-test-domaine.png" alt="The test interacts through the public ports of the application, and with the simulators whenever there's no suitable public port">
+<img src="architecture-test-domaine.png" alt="The test interacts through the public ports of the application, and with the simulators whenever there's no suitable public port">
 
 And what allows us to have these "perfect" simulators? This is where  
 <a href="./">adapter contract testing</a> comes into play: by clearly defining the contracts between the hexagon 
