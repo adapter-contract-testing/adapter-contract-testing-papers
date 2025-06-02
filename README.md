@@ -82,8 +82,9 @@ In other words: **by mastering the dependency**, we make testing much simpler an
 <br> ⚙️ Tests become simpler, more reliable, and closer to reality.
 
 📚 For concrete examples:  
- - [Slides](https://adapter-contract-testing.github.io/presentation)
- - [Kata](https://github.com/adapter-contract-testing/snail-race-kata)
+ - 🖥️ [Slides](https://adapter-contract-testing.github.io/presentation)
+ - 🥋 [Kata](https://github.com/adapter-contract-testing/snail-race-kata)
+ - 🎬 [Live coding - contract test a read only dependency](https://www.youtube.com/watch?v=Ns9fiCRxU2s)
 
 ## See also  
 ### The 5 benefits
